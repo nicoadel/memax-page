@@ -1,0 +1,87 @@
+.contactPage {
+  margin-top: 120px;
+  margin-bottom: 100px;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 50px;
+    margin-top: 75px;
+  }
+
+  .titleContent {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .imageText {
+    .image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        max-width: 330px;
+        max-height: 450px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .wpcf7 {
+    width: 100%;
+    max-width: 450px;
+
+    p {
+      margin: 0;
+    }
+
+    .wpcf7-response-output {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .contactForm {
+    display: flex;
+    justify-content: center;
+
+    p {
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      border: 2px solid black;
+      font-weight: bold;
+      background-color: theme-color("background-grey");
+    }
+
+    .wpcf7-submit {
+      border: 2px solid black;
+      margin: 0;
+      padding: 5px 14px;
+      background: none;
+      font-weight: bold;
+      font-family: "Nunito", sans-serif;
+      background-color: theme-color("background-grey");
+      transition: background-color 0.3s ease-in-out;
+      transition: border-color 0.3s ease-in-out;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        background-color: theme-color("gold-2");
+        border-color: theme-color("gold-2");
+        transition: background-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        color: black;
+      }
+    }
+  }
+}

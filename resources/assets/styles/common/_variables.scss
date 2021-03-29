@@ -1,0 +1,41 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// THEME COLORS
+$theme-colors: (
+  primary: #525ddc,
+  red-1: #e00a16,
+  red-2: #ef525d,
+  red-3: #e63b41,
+  grey-1: #333,
+  grey-2: #1a1a1a,
+  grey-3: #848484,
+  grey-4: #f8f8f8,
+  background-grey: #edf6f9,
+  blue-dark: #274472,
+  blue-grey: #5885af,
+  blue-midnight: #41729f,
+  blue-baby: #c3e0e5,
+  gold-1: #ffcb69,
+  gold-2: #e09f3e,
+);
+
+$font-size-h1: 68px;
+$font-size-h2: 68px;
+$font-size-h3: 38px;
+$font-size-h4: 17px;
+
+$font-size-h1-mobile: 32px;
+$font-size-h2-mobile: 28px;
+$font-size-h3-mobile: 26px;
+$font-size-h4-mobile: 22px;
+
+$font-size-p0: 14px;
+$font-size-p: 16px;
+$font-size-p1: 18px;
+
+$font-size-p-mobile: 14px;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

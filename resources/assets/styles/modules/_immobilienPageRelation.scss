@@ -1,0 +1,9 @@
+.immobilien-page-relation {
+  .pagetitle {
+    margin-bottom: 40px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.main-videos {
+  margin-top: -110px;
+
+  .videobox-slide {
+    margin-right: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: -140px;
+
+    .swiper-wrapper {
+      display: flex;
+      flex-flow: column;
+
+      .videobox-slide {
+        margin-right: 0;
+      }
+    }
+  }
+}

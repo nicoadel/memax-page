@@ -1,0 +1,45 @@
+.iconRepeater {
+  .container-wrapper {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .icon-box {
+      padding: 50px;
+
+      @include media-breakpoint-down(md) {
+        padding: 25px;
+      }
+
+      .icon {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          max-width: 75px;
+        }
+      }
+
+      .text {
+        text-align: center;
+        margin-top: 20px;
+
+        p {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

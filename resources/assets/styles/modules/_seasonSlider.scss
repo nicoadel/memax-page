@@ -1,0 +1,157 @@
+.season-slider {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .season-slider__title-navigation {
+    display: flex;
+    margin-bottom: 47px;
+
+    @include media-breakpoint-down(md) {
+      flex-flow: column;
+      margin-bottom: 30px;
+    }
+
+    .title-navigation__title {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+      }
+    }
+
+    .title-navigation__navigation {
+      display: flex;
+      margin-left: 73px;
+
+      @include media-breakpoint-down(md) {
+        flex-flow: column;
+        margin-left: 0;
+      }
+
+      .title-navigation__navigation__tag {
+        padding: 0 25px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        border-right: 1px solid theme-color("grey-3");
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        @include media-breakpoint-down(md) {
+          padding: unset;
+          border: unset;
+          margin: unset;
+          margin-top: 5px;
+        }
+
+        &:nth-last-child(1) {
+          border-right: 0;
+        }
+
+        &:hover {
+          p {
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+          }
+        }
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          letter-spacing: 0.3px;
+          font-weight: bolder;
+          color: theme-color("grey-3");
+          transition: color 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+      }
+    }
+  }
+
+  .season-slider__swiper {
+    .swiper-wrapper {
+      max-width: 1490px;
+
+      @include media-breakpoint-down(md) {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .videobox-slide {
+      position: relative;
+
+      @include media-breakpoint-down(md) {
+        padding: 0 15px;
+        margin: 0 auto;
+      }
+
+      .videobox-slide__hover-background {
+        background-color: theme-color("red-1");
+        position: absolute;
+        bottom: -20px;
+        top: -20px;
+        right: -20px;
+        left: -20px;
+        opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+        z-index: -1;
+
+        @include media-breakpoint-down(md) {
+          bottom: 30px;
+          top: -5px;
+          right: 6px;
+          left: 6px;
+        }
+      }
+
+      &:hover {
+        .videobox-slide__hover-background {
+          opacity: 1;
+          transition: opacity 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+        }
+
+        .videobox-slide__tag-container__box {
+          &.locked {
+            background-color: theme-color("grey-1");
+            transition: background-color 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+          }
+
+          &.date {
+            background-color: theme-color("red-2");
+            transition: background-color 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+          }
+
+          &.tag {
+            background-color: theme-color("red-3");
+            transition: background-color 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+          }
+        }
+      }
+    }
+
+    .season-button-next {
+      right: 0;
+
+      @include media-breakpoint-down(md) {
+        top: 58%;
+      }
+    }
+
+    .season-button-prev {
+      left: 0;
+
+      @include media-breakpoint-down(md) {
+        top: 58%;
+      }
+    }
+  }
+}

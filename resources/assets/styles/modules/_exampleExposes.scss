@@ -1,0 +1,28 @@
+.exampleExposes {
+  margin-top: 125px;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 35px;
+    margin-top: 40px;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .youtube {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 25px;
+    }
+  }
+}

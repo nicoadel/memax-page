@@ -1,0 +1,126 @@
+.immobilie-template-default {
+  .immocontent {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 70px;
+    }
+
+    .title {
+      margin: auto;
+      margin-bottom: 70px;
+      max-width: 1200px;
+
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .imagerepeater {
+      overflow-x: hidden;
+
+      .swiper-container-immo {
+        position: relative;
+
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+            max-height: 650px;
+            width: 100%;
+            height: 600px;
+            opacity: 0.3;
+            transition: opacity 0.5s ease-in-out;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+
+            @include media-breakpoint-down(sm) {
+              max-height: 350px;
+            }
+          }
+
+          .swiper-slide-active {
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .textcontent {
+      max-width: 800px;
+      margin: auto;
+      margin-top: 50px;
+
+      .textcontent-inside {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+
+      .place {
+        display: flex;
+        margin-top: 20px;
+
+        .icon {
+          max-width: 30px;
+          margin-right: 5px;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+
+        .icontext {
+          display: flex;
+          flex-flow: column;
+          justify-content: flex-end;
+        }
+
+        p {
+          margin: 0;
+          font-weight: bold;
+          color: theme-color("gold-2");
+          line-height: 16px;
+        }
+      }
+    }
+
+    .line-repeater {
+      margin-bottom: 100px;
+
+      .lineblock {
+        margin-bottom: 35px;
+
+        .title {
+          margin: 0;
+          margin-bottom: 20px;
+
+          h3 {
+            color: theme-color("gold-2");
+            font-size: 25px;
+            line-height: 30px;
+          }
+        }
+
+        .linecontent {
+          .line {
+            margin-bottom: 5px;
+            border-bottom: 1px solid theme-color("grey-3");
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

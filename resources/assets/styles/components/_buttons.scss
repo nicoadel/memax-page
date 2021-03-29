@@ -1,0 +1,29 @@
+.button-wrapper1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  a {
+    padding: 10px 20px;
+    border: 2px solid;
+    border-color: theme-color("blue-dark");
+    background-color: theme-color("blue-baby");
+    color: theme-color("blue-dark");
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: background-color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  &:hover {
+    a {
+      border-color: theme-color("blue-grey");
+      background-color: theme-color("blue-dark");
+      color: white;
+      transition: border-color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+      transition: background-color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+      transition: color 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+  }
+}

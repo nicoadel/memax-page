@@ -1,0 +1,35 @@
+.pictureBesideTextcontent {
+  margin-top: 150px;
+  margin-bottom: 75px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 80px;
+    margin-bottom: 65px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .link {
+      text-align: center;
+
+      a {
+        margin: auto;
+      }
+    }
+  }
+}
